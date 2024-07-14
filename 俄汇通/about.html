@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<div id="app" class="about">
+    <div class="mobile">
+        <div class="url-list" @click="headerShow = !headerShow" v-if="headerShow">
+            <a class="item pointer active">首页</a>
+            <a class="item pointer">进口服务</a>
+            <a class="item pointer">出口服务</a>
+            <a class="item pointer">物流服务</a>
+            <a class="item pointer">入驻通道</a>
+            <a class="item pointer">入驻商注册</a>
+            <a class="item pointer">企业注册</a>
+            <a class="item pointer">登 录</a>
+        </div>
+        <div class="header">
+            <div class=" flex justify-between align-center base-width">
+                <div class="header-l">
+                    <img class="logo" src="./images/home/logo.png">
+                </div>
+                <div class="header-r" @click="headerShow = !headerShow">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pc">
+        <div class="header flex ">
+            <div class="header-l">
+                <img class="logo" src="./images/home/logo.png">
+                <div class="header-list">
+                    <div class="item cur">首页</div>
+                    <div class="item">进口服务</div>
+                    <div class="item">出口服务</div>
+                    <div class="item">物流服务</div>
+                    <div class="item">入驻通道</div>
+                </div>
+            </div>
+            <div class="header-r">
+                <div class="btn active">登 录</div>
+                <div class="btn">企业注册</div>
+                <div class="btn">入驻商注册</div>
+            </div>
+        </div>
+    </div>
+    <div class="banner"></div>
+    <div class="main">
+        <div class="aboutUs">
+            <div class="aboutUsBox baseWidth">
+                <div class="title">关于我们</div>
+                <div class="content">南京闵思义供应链管理有限公司是由中奕企业管理（江苏）有限公司、苏州神码物信智能科技有限公司与延边口岸城投贸易有限公司联合打造（品牌：俄汇通），通过搭建“互联网+外贸+ 金融”数字贸易综合服务平台，创新解决外贸企业进出口过程各种业务场景需求，为中小外贸企业提供一站式通关、物流、收汇、结汇、退税、信保、协助金融等环节服务</div>
+            </div>
+            <div class="imgBox">
+                <img src='images/about/1.png'>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="title">联系我们</div>
+            <div class="contactBox baseWidth">
+                <div class="left">
+                    <div class="name">南京闵思义供应链管理有限公司</div>
+                    <div class="left-main">
+                        <div class="item">
+                            <div class="number">20年</div>
+                            <div class="text">行业沉淀</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="item">
+                            <div class="number">500人</div>
+                            <div class="text">员工数量</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="item">
+                            <div class="number">10万 </div>
+                            <div class="text">客户信赖</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>南京闵思义供应链管理有限公司</h1>
+                    <h2>地址：南京市建邺区新城科技园南区北纬国际中心A座20楼</h2>
+                    <h4>NanJing Minsiyi Supply Chain Management LTD</h4>
+                    <h5>ADDRESS:20-b, Building A, Beiwei International, No. 1 Chuangzhi Road,
+                        Xincheng Science Park, Jianye District, Nanjing,JiangSu
+                    </h5>
+                    <div class="h6"> 联系人：曹经理</div>
+                    <div  class="h7"> 联系方式：15996239724</div>
+                    <div  class="h8">微信同号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="baseWidth footerBox">
+            <div class="left">
+                <img src="images/home/logo2.png">
+            </div>
+            <div class="right">
+                <div class="right-t">
+                    <div>俄汇通版权所有 Copyright © 2024</div>
+                    <div>All Rights Reserved.</div>
+                </div>
+                <div class="right-b">
+                    <div>
+                        南京闵思义供应链管理有限公司
+                    </div>
+                    <div>
+                        ICP备案/许可证号：苏备000000000
+                    </div>
+                    <div>
+                        公安备号000000
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+
+    var vm = new Vue({
+        el: '#app',
+        data(){
+            return {
+                headerShow:false
+            }
+        },
+        mounted: function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                speed: 400,
+                autoplay: 3000,
+                autoplayDisableOnInteraction: false,
+                pagination: '.swiper-pagination',
+                loop: true,
+                paginationClickable: true,
+            })
+        },
+    })
+
+</script>
+</body>
+</html>
+

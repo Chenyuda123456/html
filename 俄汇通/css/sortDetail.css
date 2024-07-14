@@ -1,0 +1,28 @@
+.sort-detail .sort-detail-banner {
+  height: px2rem(196);
+  background: #05499A;
+  text-align: center; }
+  .sort-detail .sort-detail-banner .banner-title {
+    line-height: px2rem(30);
+    font-size: px2rem(30);
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-top: px2rem(35);
+    margin-bottom: px2rem(30); }
+  .sort-detail .sort-detail-banner .inp-box .input {
+    width: px2rem(1021);
+    height: px2rem(60); }
+    .sort-detail .sort-detail-banner .inp-box .input input {
+      height: px2rem(60);
+      border-radius: 0; }
+  .sort-detail .sort-detail-banner .inp-box button {
+    border-radius: 0;
+    width: px2rem(208);
+    font-size: px2rem(24);
+    color: #FFFFFF;
+    line-height: px2rem(60);
+    height: px2rem(60);
+    padding: 0;
+    background: #0484dc; }
+
+/*# sourceMappingURL=sortDetail.css.map */
